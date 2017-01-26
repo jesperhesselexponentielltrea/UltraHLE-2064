@@ -1,0 +1,353 @@
+Whats new in 1.0.6.1
+--------------------
+*Playable Games*
+Lode Runner 3D (E)(J)(U)
+
+*Intro works Games*
+Excitebike 64 (E)(U)
+
+Whats new in 1.0.6.0
+--------------------
+*Playable Games*
+Bokujo Monogatari 2 (J) (V1.2)
+Jikkyou G1 Stable (J) (V1.1)
+Jikkyou J. League 1999 - Perfect Striker 2 (J) (V1.1)
+Jikkyou Powerful Pro Yakyuu - Basic Han 2001 (J) (V1.1)
+Jikkyou Powerful Pro Yakyuu 5 (J) (V1.1)
+Jikkyou Powerful Pro Yakyuu 6 (J) (V1.1)
+Jikkyou Powerful Pro Yakyuu 6 (J) (V1.2)
+Pro Mahjong Kiwame 64 (J) (V1.1)
+Star Fox 64 (J) (V1.1)
+Wave Race 64 (J) (V1.1)
+WinBack - Covert Operations (J) (V1.1)
+
+*Almost playable Games*
+Mario Golf 64 (J) (V1.1)
+
+*Intro works Games*
+Super Real Mahjong VS (Arcade)
+
+Version: 1.0.5.8 -> 1.0.5.9
+
+*Playable Games*
+Excitebike 64 (J)
+
+*Intro works Games*
+CyberTiger (E)
+Gauntlet Legends (E)(J)(U)
+International Superstar Soccer 2000 (E)(FI)
+NBA Jam 99 (E)
+Pokemon Puzzle League (E)(F)(U)
+
+Version: 1.0.5.6 -> 1.0.5.7
+*Playable Games*
+A Bug's Life (I)  
+F-1 World Grand Prix II (E)
+Iggy's Reckin' Balls (E)(U)
+Iggy-kun no Bura Bura Poyon (J)
+Jikuu Senshi Turok (J)  
+Lylat Wars (A)(E)
+Major League Baseball Featuring Ken Griffey Jr. (E)(U)
+Pokemon Puzzle League (G)
+Premier Manager 64 (E)
+Jikuu Senshi Turok (J) with sound
+Turok - Dinosaur Hunter (E)(G)(U) with sound
+Zelda no Densetsu - Toki no Ocarina - Zelda Collection Version (J) (GC Version)
+
+*Almost playable Games*
+1080 Snowboarding (E)
+1080 Snowboarding (JU)
+Baku Bomberman (J)
+Big Mountain 2000 (U)
+Blast Dozer (J)
+Bomberman 64 (E)(U)
+Buck Bumble (E)(J)(U)
+Chou Kuukan Night Pro Yakyuu King (J)
+Cruis'n World (E)(U)
+Diddy Kong Racing (U) (V1.1)
+F-1 World Grand Prix (J)  
+FIFA - Road to World Cup 98 (E)(J)(U)
+FIFA Soccer 64 (E)(U)
+Fighter's Destiny (E)(F)(G)(U)
+Fighter's Destiny 2 (U)
+Fighting Cup (J)
+Kakutou Denshou - F-Cup Maniax (J)
+Killer Instinct Gold (E)
+The Legend of Zelda - Majora's Mask (E) (V1.1) (M4)
+The Legend of Zelda - Majora's Mask - Collector's Edition (E) (GC Version)
+Mario Party (J)
+Mission Impossible (E)(F)(G)(I)(S)(U)
+NBA Live 2000 (E)(U)
+NBA Live 99 (E)(U)
+New Tetris (E)
+Pokemon Stadium (I)
+Shadowgate 64 - Trials of the Four Towers (IS)
+V-Rally Edition 99 (J)(U)
+Wheel of Fortune (U)
+Wonder Project J2 (J)
+Zelda no Densetsu - Mujura no Kamen - Zelda Collection Version (J) (GC Version)
+
+*Intro works Games*
+Clay Fighter - Sculptor's Cut (U)  
+Command & Conquer (E)(G)(U)
+Rat Attack (E)(U)
+Triple Play 2000 (U)
+WWF - War Zone (E)(U)
+
+Version: 1.0.5.5 -> 1.0.5.6
+*Playable Games*
+Bassmasters 2000 (U)
+Ganbare Goemon - Mononoke Sugoroku (J)
+Mischief Makers (U)
+Ms. Pac-Man Maze Madness (U)
+NASCAR 99 (E)  
+Yuke Yuke!! Trouble Makers (J)
+
+*Almost playable Games*
+Stunt Racer 64 (U)
+
+*Intro works Games*
+Perfect Dark (E)(J)(U)
+
+Version: 1.0.5.4 -> 1.0.5.5
+*Playable Games*
+J. League Tactics Soccer (J) (V1.1)
+Power Rangers - Lightspeed Rescue (E)(U)
+Supercross 2000 (E)(U)
+Tony Hawk's Pro Skater (U) (V1.1)
+
+*Almost playable Games*
+FIFA 99 (E)(U)
+Ide Yosuke no Mahjong Juku (J)
+Madden Football 64 (E)(U)
+MRC - Multi Racing Championship (E)(J)(U)
+NFL Quarterback Club 98 (E)(U)
+Pokemon Snap (A)(E)(F)(G)(I)(S)
+Vigilante 8 (E)
+Xena Warrior Princess - Talisman of Fate (E)
+Madden NFL 2002 (U)
+
+*Intro works Games*
+Iggy's Reckin' Balls (E)(U)
+Iggy-kun no Bura Bura Poyon (J)
+Mario no Photopie (J)
+NHL 99 (E)(U)
+Off Road Challenge (E)(U)
+Star Wars - Rogue Squadron (E)(U)
+Star Wars - Shutsugeki! Rogue Chuutai (J)
+V-Rally Edition 99 (E)(J)(U)
+Waialae Country Club - True Golf Classics (E)
+
+Version: 1.0.5.3 -> 1.0.5.4
+
+*Playable Games*
+AeroGauge (J) (V1.0) (kiosk)
+Clay Fighter 63 1-3 (E)
+Doom 64 (U) (V1.1)
+Doraemon - Mittsu no Seireiseki (J)
+Doraemon 2 - Hikari no Shinden (J)
+Madden NFL 99 (E)(U)
+Mario Party 3 (E)
+Quake II (E)(U)
+Racing Simulation - Monaco Grand Prix (E)
+Racing Simulation 2 (G)
+Super Robot Spirits (J)
+
+*Almost playable Games*
+Baku Bomberman 2 (J)
+Bomberman 64 - The Second Attack! (U)
+ECW Hardcore Revolution (E)(U)
+Fire Electric Pen (J)
+Madden NFL 2000 (U)
+Mario Party 2 (J)(U)
+Star Wars - Shadows of the Empire (E)(J)(U)
+Star Wars Episode I - Racer (E)(J)
+Supercross 2000 (E)(U)
+Virtual Pool 64 (E)(U)
+World Cup 98 (E)(U)
+WWF Attitude (E)(U)
+
+*Intro works Games*
+Blast Corps (E)
+Clay Fighter (beta) (U)
+Destruction Derby 64 (E)(U)
+Harukanaru Augusta Masters 98 (J)
+Kakutou Denshou - F-Cup Maniax (J)
+Mario Party (E)(J)(U)
+Waialae Country Club - True Golf Classics (U)
+
+Version: 1.0.5.2 -> 1.0.5.3
+*Playable Games*
+Jikuu Senshi Turok (J)
+Mario Party 3 (U)
+Toy Story 2 (E)(F)(G)(U)
+Turok - Dinosaur Hunter (E)(G)(U)
+
+*Almost playable Games*
+Chou Kuukan Night Pro Yakyuu King 2 (J)
+Donkey Kong 64 - Kiosk (U)
+Madden NFL 2001 (U)
+
+*Intro works Games*
+ECW Hardcore Revolution (E)(U)
+Supercross 2000 (E)(U)
+WCW Backstage Assault (U)
+WCW Mayhem (E)(U)
+
+Official Version: 1.0.5.0 -> Unofficial Version: 1.0.5.2
+
+*Playable Games*
+64 Oozumou 2 (J)
+Airboarder 64 (E)(J)
+Akumajou Dracula Mokushiroku - Real Action Adventure (J)
+Akumajou Dracula Mokushiroku Gaiden-Legend of Cornell (J)
+Automobili Lamborghini (E)
+Bakuretsu Muteki Bangaioh (J)
+Bokujo Monogatari 2 (J) (V1.1)
+Bomberman 64 - Arcade Edition (J)
+Castlevania - Legacy of Darkness (E)(U)
+Charlie Blast's Territory (E)(U)
+Doraemon 3 - Nobita no Machi SOS! (J)
+Duke Nukem 64 (F)
+Eltale Monsters (J)
+Frogger 2
+Ganbare Goemon 2 - Deorudero Douchuu Obake Tenkomori (J)
+Ganbare Goemon - Neo Momoyama Bakufu no Odori (J)
+Goemon's Great Adventure (U)
+Hamster Monogatari 64 (J)
+Hexen (F)(G)
+Hydro Thunder (F)
+Jikkyou Powerful Pro Yakyuu 2000 (J) (V1.1)
+Jikkyou Powerful Pro Yakyuu 4 (J) (V1.1)
+The Legend of Zelda - Majora's Mask (U) Previe demo add
+The Legend of Zelda - Ocarina of Time (E) (GC Ver)
+The Legend of Zelda - Ocarina of Time - Master Quest (E)
+The Legend of Zelda - Ocarina of Time - Master Quest (U) Debug Rom
+Les Razmoket - La Chasse Aux Tresors (F)
+Mario Party 3 (J)
+Mystical Ninja 2 - Starring Goemon (E)
+Mystical Ninja - Starring Goemon (E)(U)
+Nagano Winter Olympics '98 (E)(U)
+NBA Courtside 2 - Featuring Kobe Bryant (U)
+NBA In the Zone 2000 (E)(U)
+O.D.T (E)(U)
+Pachinko 365 Nichi (J)
+Parlor! Pro 64 Pachinko Jikki Simulation Game (J)
+PD Ultraman Battle Collection 64 (J)
+Penny Racers (E)(U)
+Pilotwings 64 (E)(U)
+Pro Mahjong Tsuwamono (J)
+Puyo Puyo 4 - Puyo Puyo Party (J)
+Rakuga Kids (E)
+Roadsters Trophy (E)(U)
+Robot Ponkottsu 64 - Caramel of the 7 Seas (J)
+Robotron 64 (E)
+Rocket - Robot on Wheels (E)(U)
+Rugrats - Die grosse Schatzsuche (G)
+Rugrats - Scavenger Hunt (U)
+Rugrats - Treasure Hunt (E)
+Rush 2 - Extreme Racing USA (E)
+SD Hiryuu no Ken Densetsu (J)
+Space Invaders (U)
+Super Robot Taisen 64 (J)
+Super Speed Race 64 (J)
+Tom Clancy's Rainbow Six (F)
+Top Gear Overdrive (E)(J)(U)
+Virtual Pro Wrestling 64 (J)
+Wayne Gretzky's 3D Hockey (U) (V1.0)
+Wayne Gretzky's 3D Hockey (U) (V1.1)
+WCW-nWo Revenge (E)(U)
+WCW vs. nWo - World Tour (E)(U)
+Worms - Armageddon (E)(U)
+WWF No Mercy (E) (V1.0)(V1.1)
+WWF No Mercy (U)
+Yakouchuu II - Satsujun Kouru (J)
+Zelda no Densetsu - Toki no Ocarina Ura (GC Ver)
+
+*Almost playable Games*
+64 de Hakken!! Tamagotchi Minna de Tamagotchi World (J)
+AI Shogi 3 (J)
+Beetle Adventure Racing! (E)(J)(U)
+Bottom of the 9th (U)
+Chameleon Twist (E)(J)(U)
+Dance Dance Revolution - Disney Dancing Museum (J)
+Derby Stallion (J)
+Disney's Donald Duck - Goin' Quackers (U)
+Donald Duck - Quack Attack (E)
+Donkey Kong 64 (E)(J)
+Fighting Force 64 (E)
+Getter Love!! Cho Renai Party Game (J)
+HSV Adventure Racing (A)
+Hyper Olympics Nagano 64 (J)
+Jet Force Gemini (E)(U)
+Jet Force Gemini - Kiosk (U)
+Kiratto Kaiketsu! 64 Tanteidan (J)
+Last Legion UX (J)
+The Legend of Zelda - Majora's Mask (U) (GC Ver)
+Mickey's Speedway USA (E)(U)
+Mickey no Racing Challenge USA (J)
+NBA Showtime - NBA on NBC (U)
+Nuclear Strike 64 (E)(G)(U)
+Nushi Zuri 64 - Shiokaze ni Notte (J)
+Pokemon Stadium (E) (V1.0)(V1.1) 
+Pokemon Stadium (F)(G)(S)(U)
+Pokemon Stadium - Kiosk (U)
+Polaris Sno Cross (U)
+Razor Freestyle Scooter (U)
+Saikyou Habu Shogi (J)
+South Park Rally (E)
+Star Twins (J)
+Super Robot Spirits (J)
+Super Smash Bros. (A)(E)
+Tetrisphere (E)(U)
+Top Gear Hyper-Bike (E)(J)(U)
+Beast Wars Metals (J)
+Vigilante 8 (F)(G)(U)
+Vigilante 8 - 2nd Offence (E)(U)
+Zelda no Densetsu - Mujura no Kamen (J) (V1.0)(V1.1)
+Zelda no Densetsu - Toki no Ocarina (J) (V1.1)(V1.2)
+
+*Intro works Games*
+Chou Kuukan Night Pro Yakyuu King 2 (J)
+Dezaemon 3D (J)
+F-1 World Grand Prix (G)
+Fighter's Destiny (E)(F)(G)
+Fighting Cup (J)
+Heiwa Pachinko World (J)
+Hoshi no Kirby 64 (J) (V1.0)(V1.1)(V1.2)(V1.3)
+Ken Griffey Jr.'s Slugfest (U)
+Killer Instinct Gold (E)(U) (V1.2)
+Kirby 64 - The Crystal Shards (E)(U)
+Madden NFL 2001 (U)
+Madden NFL 2002 (U)
+Madden NFL 99 (E)
+Mario Party 3 (E)(U)
+NFL Quarterback Club 98 (E)(U)
+NHL Breakaway 98 (E)(U)
+NHL Breakaway 99 (E)(U)
+Ogre Battle 64 - Person of Lordly Caliber (J) (V1.1)
+Pokemon Snap (A)(E)(F)(G)(S)
+Quake II (E)(U)
+Star Wars - Shadows of the Empire (E)(J)
+Star Wars Episode I - Racer (E)(J)
+Stunt Racer 64 (U)
+Super Bowling (J)
+Toukon Road - Brave Spirits (J)
+Toukon Road 2 - The Next Generation (J)
+Twisted Edge Extreme Snowboarding (E)(U)
+Virtual Pool 64 (E)(U)
+World Driver Championship (E)(U)
+WWF Attitude (E)(G)(U)
+
+*Not working Games*
+Big Mountain 2000 (U)
+CyberTiger (E)
+International Superstar Soccer 2000 (FI)
+Mischief Makers (U)
+Star Wars - Rogue Squadron (E) (V1.1)
+Turok 2 - Seeds of Evil - Kiosk (E)
+Waialae Country Club - True Golf Classics (E) (V1.1)
+
+
+Last Updated: 2006/11/20
+Jelta
