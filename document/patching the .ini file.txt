@@ -1,0 +1,317 @@
+patching the .ini file  (__JC & -Max-)
+--------------------------------------
+
+How to use command MAPMEM?  (__JC & -Max-)
+
+  To use mapmem, you need to be looking at the big DOS window with ultraHLE
+  frantic version, when you start the emu, you also get a big black window the DOS
+  debug window. You need to check the numbers in the blue box at the top of this
+  window. Look for 'sp' which is the bottom of the second row from the right! OK,
+  this is how it works: the error you get in the 'debug output' window of the main
+  HLE window, this is the first number, then, the 'sp' number is the second number
+  and the last number, I make it 10000000 always.
+
+Why  use bootloader=1 ?     (__JC & -Max-)
+
+   Ok, ALL n64 roms, use a small piece of code, called the boot code, so that they
+  can load from the cartridge, into the n64, it is also called the bootloader. So,
+  if you have a bad rom file from the internet ultraHLE has this code built-in.
+  So, you can try to add the line 'bootloader=1' to use the internal HLE code, and
+  not that which is in the game rom.
+
+How to find the OSrange?    (__JC & -Max-)
+
+  Each game rom, has bootcode, when you load a rom, in the DOS window, you should
+  make a note of the address which is waiting to run. Load the frantic version of
+  UltraHLE, from file menu, open the rom you want, but do NOT run it yet. In the
+  big black window, it should be waiting at 800xxxxx, can you see this? REMEMBER
+  THIS, ALL BOOT CODE IS 3F0 LONG. Ok, so we add '3f0' to '800xxxxx' and we get
+  '800xxxf0', ok?  i.e : 80000400 add "3f0"  we get 800007f0.
+  In the big DOS window, type 'u 800007f0'. Click the window once, to make it
+  active, then start typing, you will see what you type at the bottom of the DOS
+  window. Notice at 8000xxxx, the line starting with 'jal'  i.e: jal 800322D0
+  osCreateThread #10
+  Ok, where you see that osCreateThread, it means this is the part of the game
+  that goes off to the osrange. What you do, is take the 800 and the first number
+  after this, and that is the start of the game. So, rom osrange is
+  osrange=80030000, 8xxxxxx
+
+patch 0, xxxxxxxx, patch yy (0-255)
+
+  This is an insert patch, where yy is the decimal value to the hex code of the
+  patch. If this patch is used, then all addresses following this patch to the
+  next available 'nop' instruction in the code, must be patched too, using the
+  patch 0 command.
+
+patch=-1, xxxxxxxx, byte yy (0-255)
+
+  This places the hex value for yy at bit location 7 & 8 ie. if yy is 22, before,
+  the address shows 00000000, but now it shows 16000000. This is what is used to enable
+  cheats, extra, lives etc. Remember, that this is loaded as decimal in the .ini
+  file, and stored as hex in 
+  the ROM, such as 22 decimal is 0x16 in Hex.
+
+patch=-2, xxxxxxxx, byte 2
+
+  This places the opcode 'syscall' at the address.
+
+patch=-2, xxxxxxxx, patch yy
+
+  This places the patch decimal yy at the address. Remember, that yy is in
+  decimal, and the value patched will be a hex value.
+  patch 30  // audio
+  patch 31  // audio
+
+
+These are SOME errors that I found and fixed! It should work at all roms that have
+the same error. These errors are found at ULTRAfrantic and windows debugger at
+Ultrahle. This might be Helpfull!!!  By: -MAX-
+------------------------------------------------------------------
+			All this are examples!  By: -MAX-
+------------------------------------------------------------------
+
+XXXXXXXX  1000FFFF  a2   b 
+
+---> Patch= -1, XXXXXXXX, word 0x1000FFF9
+
+XXXXXXXX  xxxxFFFF  a2   bne1 T9!=r0 
+
+---> Patch= -1, XXXXXXXX, word 0x00000000
+
+XXXXXXXX  xxxxxxxx  addiu  s0=s0+001 
+
+---> Patch= -1, XXXXXXXX, word 0x00000000
+
+XXXXXXXX  xxxxxxxx  LBU T4
+
+---> Patch= -1, XXXXXXXX, word 0x00000000
+
+XXXXXXXX  xxxxxxxx  Beq1  V0=r0 -->XXXXXXXX
+
+---> Patch= -1, XXXXXXXX, word 0x00000000
+
+XXXXXXXX  xxxxxxxx  Beq1  T7=r0 -->XXXXXXXX
+
+---> Patch= -1, XXXXXXXX, word 0x00000000
+
+XXXXXXXX  xxxxxxxx  Bne1  s0!=v1 
+
+---> Patch= -1, XXXXXXXX, patch 49
+
+XXXXXXXX  xxxxxxxx  a3  lw
+
+---> Patch= -1, XXXXXXXX, word 0x00000000
+
+Display list too large
+
+---> Patch= -1, XXXXXXXX, patch 49
+
+Display doesn't look right
+
+---> Patch= -1, XXXXXXXX, patch 49  or
+---> Patch= -1, XXXXXXXX, patch 14
+
+DMA Copy illega ranges
+
+---> Patch= -1, XXXXXXXX, patch 13
+
+Unimplemented CPU opcode
+
+---> Patch= -1, XXXXXXXX, patch 53
+
+Unimplemented CPU opcode patch 14880
+
+---> Patch= -1, XXXXXXXX, patch 53
+
+Queue id -2145978976 at 801702c0 too large
+
+---> Patch= -1, XXXXXXXX, patch 53
+
+Dlist matrix stask underflow
+
+---> Patch= -1, XXXXXXXX, patch 49 
+
+Cpu a util:reg allocnew with r0
+
+---> Patch= -1, XXXXXXXX, patch 49 
+
+(03ff000) execution invalid address
+
+---> mapmem= 03ff000, sp N0, 10000000  (sp N0 can be found at ultrafrantic on second row from right)
+------------------------------------------------------------------
+* XXXXXXXX means any number.
+
+------------------------------------------------------------------
+			All this are examples!  By: Jelta
+------------------------------------------------------------------
+
+Ignore infinite loop subroutine
+
+XXXXXXXX  xxxxxxxx  Jal
+XXXXXXXX  xxxxxxxx  jal osRecvMesg #14
+XXXXXXXX  xxxxxxxx  jal osSendMesg #15
+
+---> patch= -1, XXXXXXXX, word 0
+
+
+queue size too large
+
+XXXXXXXX:  addiu  a2 = r0+0200
+xxxxxxxx:  sw
+xxxxxxxx:  sw
+xxxxxxxx:  jal  YYYYYYYY osCreateMesgQueue #13
+
+---> patch= -1, XXXXXXXX, word 0x24060100 //  addiu  a2 = r0+0100
+
+
+(03ff000) execution invalid address
+-osCreateThread, osStartThread not found
+
+xxxxxxxx:  jal  YYYYYYYY osCreateThread #10
+xxxxxxxx:
+xxxxxxxx:
+xxxxxxxx:  jal  ZZZZZZZZ osStartThread #11
+xxxxxxxx:
+xxxxxxxx:  lw   ra <- [sp+001C] //  ra  03ff000
+xxxxxxxx:  
+xxxxxxxx:  jr   ra
+
+---> 
+patch= -1, YYYYYYYY, patch 10
+patch= -1, ZZZZZZZZ, patch 11
+
+
+crash due osMapTLB
+-Invalid size, Interpreter only works
+
+XXXXXXXX:  70000018  osMapTLB #24
+
+---> 
+patch= -1, XXXXXXXX, word 0x8FBA0010//  lw  k0,$0000(sp) 
+patch= -1, XXXXXXXX, word 0x07410003//  bgez  k0,$00000000 
+patch= -1, XXXXXXXX, word 0
+patch= -1, XXXXXXXX, word 0x24FA0000//  addiu  k0,a3,$0000 
+patch= -1, XXXXXXXX, word 0xAFBA0010//  sw  k0,$0000(sp) 
+patch= -1, XXXXXXXX, patch 24
+
+
+unimplemented CPU opcode (ldr, ldl, sdl, sdr)
+-Perform equivalent processing using the lb, sb opcode
+
+YYYYYYYY:  ldr  t0 <- [a1+FFF7]
+xxxxxxxx:  ldl  t1 <- [a1+FFF8]
+xxxxxxxx:  ldr  t1 <- [a1+FFFF]
+xxxxxxxx:  sdl  t0 -> [a0+FFF0]
+xxxxxxxx:  sdr  t0 -> [a0+FFF7]
+xxxxxxxx:  sdl  t1 -> [a0+FFF8]
+xxxxxxxx:  sdr  t1 -> [a0+FFFF]
+ZZZZZZZZ:  bnel a0!=a3  -->80027F58
+xxxxxxxx:  ldl  t0 <- [a1+0000]
+
+---> 
+patch= -1, YYYYYYYY, word 0x08140000//  j 80500000
+mapmem=80500000,1005E000,1000
+patch= -1, 80500000, word 0x80A8FFFF//  lb  t0 <- [a1+FFFF]
+patch= -1, 80500004, word 0xA088FFFF//  sb  t0 -> [a0+FFFF]
+patch= -1, 80500008, word 0x80A8FFFE//  lb  t0 <- [a1+FFFE]
+patch= -1, 8050000C, word 0xA088FFFE//  sb  t0 -> [a0+FFFE]
+patch= -1, 80500010, word 0x80A8FFFD//  lb  t0 <- [a1+FFFD]
+patch= -1, 80500014, word 0xA088FFFD//  sb  t0 -> [a0+FFFD]
+patch= -1, 80500018, word 0x80A8FFFC//  lb  t0 <- [a1+FFFC]
+patch= -1, 8050001C, word 0xA088FFFC//  sb  t0 -> [a0+FFFC]
+patch= -1, 80500020, word 0x80A8FFFB//  lb  t0 <- [a1+FFFB]
+patch= -1, 80500024, word 0xA088FFFB//  sb  t0 -> [a0+FFFB]
+patch= -1, 80500028, word 0x80A8FFFA//  lb  t0 <- [a1+FFFA]
+patch= -1, 8050002C, word 0xA088FFFA//  sb  t0 -> [a0+FFFA]
+patch= -1, 80500030, word 0x80A8FFF9//  lb  t0 <- [a1+FFF9]
+patch= -1, 80500034, word 0xA088FFF9//  sb  t0 -> [a0+FFF9]
+patch= -1, 80500038, word 0x80A8FFF8//  lb  t0 <- [a1+FFF8]
+patch= -1, 8050003C, word 0xA088FFF8//  sb  t0 -> [a0+FFF8]
+patch= -1, 80500040, word 0x80A9FFF7//  lb  t1 <- [a1+FFF7]
+patch= -1, 80500044, word 0xA089FFF7//  sb  t1 -> [a0+FFF7]
+patch= -1, 80500048, word 0x80A9FFF6//  lb  t1 <- [a1+FFF6]
+patch= -1, 8050004C, word 0xA089FFF6//  sb  t1 -> [a0+FFF6]
+patch= -1, 80500050, word 0x80A9FFF5//  lb  t1 <- [a1+FFF5]
+patch= -1, 80500054, word 0xA089FFF5//  sb  t1 -> [a0+FFF5]
+patch= -1, 80500058, word 0x80A9FFF4//  lb  t1 <- [a1+FFF4]
+patch= -1, 8050005C, word 0xA089FFF4//  sb  t1 -> [a0+FFF4]
+patch= -1, 80500060, word 0x80A9FFF3//  lb  t1 <- [a1+FFF3]
+patch= -1, 80500064, word 0xA089FFF3//  sb  t1 -> [a0+FFF3]
+patch= -1, 80500068, word 0x80A9FFF2//  lb  t1 <- [a1+FFF2]
+patch= -1, 8050006C, word 0xA089FFF2//  sb  t1 -> [a0+FFF2]
+patch= -1, 80500070, word 0x80A9FFF1//  lb  t1 <- [a1+FFF1]
+patch= -1, 80500074, word 0xA089FFF1//  sb  t1 -> [a0+FFF1]
+patch= -1, 80500078, word 0x80A9FFF0//  lb  t1 <- [a1+FFF0]
+patch= -1, 8050007C, word 0xA089FFF0//  sb  t1 -> [a0+FFF0]
+patch= -1, 80500080, word 0x0800zzzz//  j   ZZZZZZZZ
+patch= -1, 80500084, word 0x00000000//  nop
+
+
+osSetEventMesg #16 not found
+
+example 1
+xxxxxxxx: lui    a2 = 22220000
+xxxxxxxx: ori    a2 = a2 | 2222
+xxxxxxxx: addiu  a1 = a1+ABA0 
+xxxxxxxx: jal    YYYYYYYY osSetEventMesg #16
+xxxxxxxx: addiu  a0 = r0+0008 
+xxxxxxxx: addiu  t9 = r0+FFFF 
+xxxxxxxx: sw     t9 -> [sp+0028]
+xxxxxxxx: jal    xxxxxxxx osGetThreadPri #2
+
+example 2
+xxxxxxxx: lui    a2 = 22220000
+xxxxxxxx: jal    YYYYYYYY osSetEventMesg #16
+xxxxxxxx: ori    a2 = a2 | 2222
+xxxxxxxx: addiu  s2 = r0+FFFF 
+xxxxxxxx: jal    xxxxxxxx osGetThreadPri #2
+xxxxxxxx: addu   a0 = r0+r0
+
+---> 
+patch= -1, YYYYYYYY, patch 16
+
+
+osViSetEvent #17 not found
+
+example 1
+xxxxxxxx: addiu      a0 = r0+0001 
+xxxxxxxx: addiu      a0 = r0+0004 
+xxxxxxxx: move       a1 = s1
+xxxxxxxx: jal        xxxxxxxx osSetEventMesg #16
+xxxxxxxx: addiu      a2 = r0+029B 
+xxxxxxxx: addiu      a0 = r0+0009 
+xxxxxxxx: move       a1 = s1
+xxxxxxxx: jal        xxxxxxxx osSetEventMesg #16
+xxxxxxxx: addiu      a2 = r0+029C 
+xxxxxxxx: addiu      a0 = r0+000E 
+xxxxxxxx: move       a1 = s1
+xxxxxxxx: jal        xxxxxxxx osSetEventMesg #16
+xxxxxxxx: addiu      a2 = r0+029D 
+xxxxxxxx: lbu        a2 <- [sp+003B]
+xxxxxxxx: move       a0 = s1
+xxxxxxxx: jal        YYYYYYYY osViSetEvent #17
+xxxxxxxx: addiu      a1 = r0+029A 
+
+example 2
+xxxxxxxx: addiu      a0 = r0+0001 
+xxxxxxxx: addiu      a0 = r0+0004 
+xxxxxxxx: addu       a1 = s2+r0
+xxxxxxxx: jal        xxxxxxxx osSetEventMesg #16
+xxxxxxxx: addiu      a2 = r0+029B 
+xxxxxxxx: addiu      a0 = r0+0009 
+xxxxxxxx: addu       a1 = s2+r0
+xxxxxxxx: jal        xxxxxxxx osSetEventMesg #16
+xxxxxxxx: addiu      a2 = r0+029C 
+xxxxxxxx: addiu      a0 = r0+000E 
+xxxxxxxx: addu       a1 = s2+r0
+xxxxxxxx: jal        xxxxxxxx osSetEventMesg #16
+xxxxxxxx: addiu      a2 = r0+029D 
+xxxxxxxx: addu       a0 = s2+r0
+xxxxxxxx: addiu      a1 = r0+029A 
+xxxxxxxx: jal        YYYYYYYY osViSetEvent #17
+xxxxxxxx: addu       a2 = s3+r0
+
+---> 
+patch= -1, YYYYYYYY, patch 17
+------------------------------------------------------------------
+* XXXXXXXX means any number.
