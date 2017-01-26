@@ -1,3 +1,49 @@
+Whats new in 1.0.6.2
+--------------------
+*Playable Games*
+Aidyn Chronicles - The First Mage (U) (V1.1)
+California Speed (E) (Proto)
+Castlevania (U) (V1.1)
+Dragon Sword 64
+Mini Racers (Unreleased) (U)
+Mischief Makers (U) (v1.1)
+Mortal Kombat Trilogy (U) (V1.1)
+NHL Breakaway 98 (E)(U)
+NHL Breakaway 99 (E)(U)
+Ogre Battle 64 - Person of Lordly Caliber (U) (V1.1)
+Ronaldinho Soccer 64 (Brazil) (Pirate)
+Scooby-Doo - Classic Creep Capers (U) (v1.1)
+Tommy Thunder (USA) (Proto)
+Tamiya Racing 64 (Unreleased)
+Wildwaters (U) (Proto)
+WWF No Mercy (U) (V1.1)
+
+*Almost playable Games*
+Chameleon Twist (U) (V1.1)
+The Legend of Zelda - Majora's Mask (E) (En,Fr,De,Es) (Beta)
+Mahjong Master (J)
+NBA Jam 99 (E)(U)
+Nushi Zuri 64 (J) (V1.1)
+San Francisco Rush - Extreme Racing (U) (v1.1)
+Shadow Man (Brazil)(E)(F)(G)(U)
+South Park (Brazil)(E)(G)(U)
+Turok - Legenden des Verlorenen Landes (Rage Wars) (G)
+Turok - Rage Wars (E)(F)
+Turok 2 - Seeds of Evil (E)(F)(G)(U)
+Violence Killer - Turok New Generation (J)
+
+*Intro works Games*
+Fushigi no Dungeon - Furai no Shiren 2 (J)
+Tommy Thunder (U) (Proto) 
+Taz Express (U)
+Sydney 2000 (U) (Proto) / (E)
+
+*Not working Games*
+NFL Blitz 2000 (U) (v1.1)
+Pokemon Snap (J) (VC)
+Resident Evil 2 (U) (V1.0)
+Waialae Country Club - True Golf Classics (U) (V1.1)
+
 Whats new in 1.0.6.1
 --------------------
 *Playable Games*
@@ -349,5 +395,5 @@ Turok 2 - Seeds of Evil - Kiosk (E)
 Waialae Country Club - True Golf Classics (E) (V1.1)
 
 
-Last Updated: 2006/11/20
+Last Updated: 2017/01/26
 Jelta
